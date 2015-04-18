@@ -3,7 +3,7 @@
 Summary:	CloudRouter repository files
 Name:		cloudrouter-repo
 Version:	1
-Release:	0
+Release:	1
 License:	AGPLv3
 Group:		System Environment/Base
 Source:		https://github.com/cloudrouter/cloudrouter-release/archive/%{cloudrouter_release}.tar.gz
@@ -54,3 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 /etc/pki/rpm-gpg/RPM-GPG-KEY-cloudrouter*
 
 %changelog
+* Sat Apr 18 2015 Arun Babu Neelicattu <arun.neelicattu@gmail.com> - 1-1
+- Initial cloudrouter-repo package
+
