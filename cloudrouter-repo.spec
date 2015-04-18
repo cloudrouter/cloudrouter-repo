@@ -39,7 +39,7 @@ ln -s RPM-GPG-KEY-cloudrouter-%{version}-primary RPM-GPG-KEY-%{version}-cloudrou
 
 install -d -m 755 $RPM_BUILD_ROOT/etc/yum.repos.d
 for file in cloudrouter*repo ; do
-  perl -pi -e 's/$$releasever/%{version}/' $file
+  sed -ie 's/\$releasever/%{version}/' $file
   install -m 644 $file $RPM_BUILD_ROOT/etc/yum.repos.d
 done
 
