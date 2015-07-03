@@ -1,12 +1,12 @@
 
 Summary:	CloudRouter repository files
 Name:		cloudrouter-repo
-Version:	1
-Release:	2
+Version:	2
+Release:	1
 License:	AGPLv3
 Group:		System Environment/Base
 Source0:    cloudrouter.repo
-Source1:    RPM-GPG-KEY-cloudrouter-1-primary
+Source1:    RPM-GPG-KEY-cloudrouter-2-primary
 BuildArch:	noarch
 Conflicts:  cloudrouter-release
 
@@ -41,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) /etc/yum.repos.d/*
 
 %changelog
+* Thu Jul 02 2015 John Siegrist <jsiegrist@iix.net> - 2-1
+- Increment version for the 2.0 Beta release.
+
 * Sat Apr 18 2015 Arun Babu Neelicattu <arun.neelicattu@gmail.com> - 1-2
 - Conflict with cloudrouter-release package as this is meant to be installed
   only on non-release distros

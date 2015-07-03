@@ -1,10 +1,10 @@
 # Copyright 2015 CloudRouter Project Authors.
 
-CR_VERSION	:= 1
-CR_RELEASE	:= 6
+CR_VERSION	:= 2
+CR_RELEASE	:= 1
 REPO_BASE	:= https://raw.githubusercontent.com/cloudrouter/cloudrouter-release/$(CR_VERSION)-$(CR_RELEASE)/cloudrouter-release
 REPOFILE	:= cloudrouter.repo
-GPGKEY		:= RPM-GPG-KEY-cloudrouter-1-primary
+GPGKEY		:= RPM-GPG-KEY-cloudrouter-2-primary
 
 all: source
 
